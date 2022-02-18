@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Remote style sheet -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css">
+    
+    <!-- Local style sheet relative to workspace folder -->
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Local style sheet relative to this file -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Embedded style sheet -->
+    <script src="https://kit.fontawesome.com/9cbce6dea2.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery.min.js"></script>
+    <style>
+      html{
+          scroll-behavior: smooth;
+      }
+      
+       *{
+           padding: 0;
+           margin: 0;
+           box-sizing: border-box;
+       }
+ /***********************HEADER START HERE******************/
+      .header{ 
+           position: fixed;
+           top: 0;
+           width: 100vw;
+           height: 70px;
+         
+           box-shadow: 0px 2px 5px;
+           background-color: #222;
+           display: flex;
+           align-items: center;
+           justify-content: space-around;
+           color: #fff;
+           z-index: 3;
+           opacity: 1;
+       }
+
+      
+       .nav ul{
+          margin: 10px 0;
+       }
+
+       .nav li{
+           list-style: none;
+           display: inline;
+           margin: 0;
+           font-size: 20px;
+           font-family:'roboto',Arial, Helvetica, sans-serifserif;
+       }
+
+       .nav a{
+           color: #fff;
+           text-decoration: none;
+           border-right: 1px solid #a0a0a0;
+           box-shadow: 0px 0px 0px;
+           padding: 22px;
+       }
+
+       .nav a:hover{
+           color: #a0a0a0;
+           opacity: 1;
+       }
+
+       label{
+           display: none;
+       }
+
+       #toggle{
+           display: none;
+       }
+  /***********************HEADER END HERE******************/
+
+  /***********************MAIN START HERE******************/
+  main{
+      height: 600px;
+      background-image: url(https://tinyurl.com/2p82z63e);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: bottom;
+      position: relative;
+      text-align: center;
+      align-items: center;*/
+  }
+
+  .content{
+      position: absolute;
+      top: 20%;
+      left: 50%;
+      transform: translate(-50% ,50%);
+      font-family:'roboto',Arial, Helvetica, sans-serifserif;
+      z-index: 2;
+  }
+
+  .content h2{
+      font-size: 5rem;
+      font-weight: bolder;
+      color:#fff;
+  }
+
+  .content p{
+      font-size: 2rem;
+      color:#fff;
+      font-family: 'roboto',Arial, Helvetica, sans-serifserif;
+  }
+
+  .overlay{
+        background-color: #0000008a;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+}
+   /***********************MAIN END HERE************************/
+
+
+   /***********************SECTION START HERE*******************/
+    section{
+         width: 100vw;
+         height: 600px;
+         background-color:#227093;
+         align-items: center;
+         text-align: center;
+         justify-content: center;
+         padding: 70px 100px 0 100px;
+    }
+
+    section h1{
+       font-family: 'roboto', Arial, Helvetica, sans-serif;
+       font-weight: 300;
+       color: #fff;
+    }
+
+    .section-container {
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .section-content p{
+        margin: 25px 28px;
+        color: #fff;
+    }
+
+    .section-content h5{
+        color: #fff;
+    }
+
+    .section-content i{
+        width: 50px;
+        height: 50px;
+        border:1px solid red;
+        color: red;
+        border-radius: 50%;
+        padding: 15px 10px 0 10px;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-content i:hover{
+        color: #fff;
+        border: 1px solid#fff;
+    }
+
+   /***********************SECTION END HERE*********************/
+   
+   /***********************SECTION-CONTAINER START HERE*********************/
+   .inner-content{
+       width: 100%;
+       height: 300px;
+       background-color: #fff;
+       background-image: url(https://tinyurl.com/bden9cwp);
+       background-repeat: no-repeat;
+       background-size: cover;
+       background-position: center;
+       text-align: center;
+       padding-top: 15px;
+       position: relative;
+   }
+   .inner-content h1{
+       color: #fff;
+       position: absolute;
+       top: 5%;
+       left: 35%;
+       z-index: 2;
+   }
+   
+  .content-pos{
+       display: flex;
+      /* text-align: center;
+       align-items: center;
+       justify-content: center;*/
+       position: absolute;
+       top: 15%;
+       left: 15%;
+       z-index: 2;
+    }
+
+ .inner-left{
+       width: 600px;
+       height: 150px;
+       color: #fff;
+       font-weight:bold;
+       border: 1px solid #000;
+       margin: 30px 15px;
+       padding: 15px;
+    }
+
+   .inner-right{
+       width: 600px;
+       height: 150px;
+       color: #fff;
+       font-weight:bold;
+       border: 1px solid #000;
+       margin: 30px 15px;
+       padding: 15px;
+       outline: none;
+    }
+
+   .inner-right h5{
+       margin-bottom: 30px;
+   }
+
+   .inner-left h5{
+       margin-bottom: 30px;
+   }
+
+   button{
+       border: none;
+       outline: none;
+      
+       color: red;
+       width: 150px;
+       padding: 10px 0;
+       border-radius: 5px;
+       border: 1px solid red;
+   }
+
+   button:hover{
+       color: #fff;
+       background-color: red;
+   }
+
+   .overlay2{
+        background-color: #0000008a;
+        position: absolute;
+        top: 1200px;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 300px;
+}
+/***********************SECTION-CONTAINER END HERE*********************/
+
+/***********************BLOG-POST START HERE*********************/
+
+  .blog-post{
+       width: 100%;
+       height: 600px;
+       background-color: #fff;
+       padding: 20px 100px 0 100px;
+      
+  }
+
+  .blog-post h1{
+      margin-left: 42%;
+  }
+
+  .blog-container{
+      display: flex;
+  }
+
+  .blog-post-content{
+      margin-top: 20px;
+      margin-right:20px;
+      line-height: 1.5rem;
+     
+  }
+  .blog-post-content img{
+     width: 550px;
+     height: 300px;
+     margin-bottom: 20px;
+ }
+
+ .blog-post-content h5{
+     color: red;
+     margin-bottom: 1rem;
+ }
+ /***********************BLOG-POST END HERE*********************/ 
+ /***********************SUCCES STARTHERE*********************/ 
+   .succes{
+       width: 100%;
+       height: 180px;
+       background-color: #333;
+       position: relative;
+   }
+
+   .succes-container{
+       display: flex;
+       position: absolute;
+       top: 50%;
+       left: 40%;
+       transform: translate(-40%,-50%);
+   }
+
+   .succes-container h4{
+       color: #fff;
+       margin-right: 100px;
+   }
+
+  .succes-container,button{
+      background-color: #333;
+   }
+/***********************SUCCES END HERE*********************/ 
+
+/***********************FOOTER START HERE*********************/ 
+    footer{
+    width: 100%;
+    height: 100px;
+    background-color: #222;
+    position: relative;
+    padding-top: 10px;
+  }
+
+   footer h5{
+      color: #fff;
+      position: absolute;
+      bottom: 3px;
+      left: 45.5%;
+  }
+
+  .social-link{
+      text-align: center;
+  }
+  
+  .social-link a{
+      color: #fff;
+      border: 1px solid #a0a0a0;
+      border-radius: 3px;
+      padding: 5px 8px;
+      width: 8px;
+      height: 8px;
+  }
+
+  .social-link a:hover{
+      color: #000;
+      background-color: #fff;
+  }
+/***********************SUCCES END HERE*********************/ 
+.gototop{
+  width: 50px;
+  height: 50px;
+  background-color: #eb4d4b;
+  color: #fff;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+    </style>
+</head>
+
+<body>
+   <div class="header">
+       <h1>logo</h1>
+       <label for="toggle">&#9776;</label>
+       <input type="checkbox" id="toggle">
+       <div class="nav">
+           <ul>
+               <li><a href="#">Home</a></li>
+               <li><a href="#blog-post">About</a></li>
+               <li><a href="#">Portfolio</a></li>
+               <li><a href="#">Blog</a></li>
+               <li><a href="#">Contact</a></li>
+           </ul>
+        </div>
+    </div>
+
+    <main>
+    <div class="content">
+        <h2>Resort for Rent</h2>
+        <p>Enjoy Your Vacation with our Lovely and Affordable Resorts,Here in PANSOL</p>
+    </div>
+    <div class="overlay"></div>
+    </main>
+
+   <section>
+           <h1>OUR SERVICES</h1>
+
+       
+        <div class="section-container">
+             <div class=" top section-content">
+                 <i class="fas fa-desktop"></i>
+                 <h5>Search</h5>
+                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem in vel
+                    culpa quod reprehenderit ullam laborum qui fugit? Natus, saepe?Lorem ipsum dolor sit
+                     amet consectetur adipisicing elit. Exercitationem in vel
+                    culpa quod reprehenderit ullam laborum qui fugit? Natus, saepe?</p>
+             </div>
+
+             <div class="top section-content">
+                <i class="fas fa-camera"></i>
+                <h5>Photography</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem in vel
+                   culpa quod reprehenderit ullam laborum qui fugit? Natus, saepe?Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Exercitationem in vel
+                   culpa quod reprehenderit ullam laborum qui fugit? Natus, saepe?</p>
+            </div>
+
+            <div class="top section-content">
+                <i class="fas fa-video"></i>
+                <h5>Video Editing</h5>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem in vel
+                   culpa quod reprehenderit ullam laborum qui fugit? Natus, saepeLorem ipsum dolor sit 
+                   amet consectetur adipisicing elit. Exercitationem in vel
+                   culpa quod reprehenderit ullam laborum qui fugit? Natus, saepe??</p>
+            </div>
+        </div>
+     </section>
+
+    
+        <div class="inner-content">
+             <h1>FIND OUT WHAT WE'RE ALL ABOUT</h1>
+             <div class="content-pos">
+               <div class="inner-left">
+                 <h5>Take some time for your Vacation</h5>
+                   <button>Book Now</button>
+              </div>
+
+               <div class="inner-right">
+                 <h5>Review Some Facts About Us</h5>
+                   <button>Facts About Us</button>
+                </div>
+        </div>
+    </div>
+
+    <div class="overlay2"></div>
+
+    <div class="blog-post">
+        <h1>LATEST NEWS</h1>
+        <div class="blog-container">
+        <div class="blog-post-content">
+            <img src="https://tinyurl.com/3pss3uh4" alt="Scenery">
+            <h5>Build Something Great</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quisquam consequatur  cum delectus itaque eligendi libero, 
+                cum delectus itaque eligendi libero,  cum delectus itaque eligendi libero,  cum delectus itaque eligendi libero, 
+                modi reiciendis perferendis.  cum delectus itaque eligendi libero,  cum delectus itaque eligendi libero, 
+                Deleniti hic sint possimus inventore. 
+               </p>
+        </div>
+
+        <div class="blog-post-content">
+            <img src="https://tinyurl.com/yk5cwh8x" alt="Scenery">
+            <h5>Living Your Dreams</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quisquam consequatur  cum delectus itaque eligendi libero, 
+                cum delectus itaque eligendi libero,  cum delectus itaque eligendi libero,  cum delectus itaque eligendi libero, 
+                modi reiciendis perferendis.  cum delectus itaque eligendi libero,  cum delectus itaque eligendi libero, 
+                Deleniti hic sint possimus inventore. 
+               </p>
+        </div>
+
+        <div class="blog-post-content">
+            <img src="https://tinyurl.com/3esc65nc" alt="Scenery">
+            <h5>Give Them Something to Talk About</h5>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta quisquam consequatur  cum delectus itaque eligendi libero, 
+                cum delectus itaque eligendi libero,  cum delectus itaque eligendi libero,  cum delectus itaque eligendi libero, 
+                modi reiciendis perferendis.  cum delectus itaque eligendi libero,  cum delectus itaque eligendi libero, 
+                Deleniti hic sint possimus inventore. 
+               </p>
+        </div>
+     </div>
+    </div>
+
+    <div class="succes">
+        <div class="succes-container">
+        <h4>WE LOVE WHAT WE DO.NEED INSPIRATION? CHECK OUT WHAT OUR CLIENT SAY</h4>
+        <button>SUCCESS STORIES</button>
+    </div>
+</div>
+
+  <footer>
+      <div class="social-link">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <h5>&copy NYC TECH CLUB</h5>
+  </footer>
+
+  <a class="gototop" href="#"> <i class="fas fa-arrow-up"></i></a>
+      
+ 
+
+</body>
+
+</html>
